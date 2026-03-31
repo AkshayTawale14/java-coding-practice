@@ -1,0 +1,40 @@
+package com.akshay.array;
+
+import java.util.Scanner;
+
+public class OccurrenceOfAnyElementInArray13 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter Array size :");
+        int size = sc.nextInt();  // Array length is 5 but index starts from 0 to 4
+
+        int a[] = new int[size];
+
+        System.out.println("Enter Arrays Elements :");
+        for(int i=0; i<size;i++){
+            a[i] = sc.nextInt();
+        }
+
+        System.out.println("Enter the value to count frequency :");
+        int value = sc.nextInt();
+
+        int count = 0;
+        System.out.println("Display frequency of Array Element :");
+        for(int i=0;i<a.length;i++){
+
+            if(a[i]==value){
+                count++;
+            }
+
+        }
+
+        System.out.println("Count of "+value+ " = "+count);
+    }
+
+
+}
+
+
