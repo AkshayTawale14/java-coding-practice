@@ -8,7 +8,7 @@ public class FilterEven1 {
 
     public static void main(String[] args) {
 
-        List<Integer> list = Arrays.asList(10,11,13,14,15,16,17,19,20);
+        List<Integer> list = Arrays.asList(10,11,13,14,15,16,17,19,20);   //
 
         List<Integer> even = list.stream().filter(n-> n%2==0).collect(Collectors.toList());
         System.out.println(even);
